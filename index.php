@@ -33,7 +33,11 @@ if (isset($_GET["number"])) {
 </head>
 <body>
     <script>
-        fetch(`?number=${prompt("Podaj liczbę z zakresu 0-3")}`).then(response => response.text()).then(text => document.write(text));
+        let number;
+        do {
+            number = prompt("Podaj liczbę z zakresu 0-3");
+        } while (number < 0 || number > 3);
+        fetch(`?number=${number}`).then(response => response.text()).then(text => document.write(text));
     </script>
 </body>
 </html>
