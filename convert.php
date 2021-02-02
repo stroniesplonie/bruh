@@ -12,7 +12,11 @@ function toString(int $input, int $base) {
     $input = abs($input);
     $result = "";
     do {
-        $result .= $input % $base;
+        $digit = $input % $base;
+        if ($digit > 9) {
+            $digit = chr($digit + 87);
+        }
+        $result .= $digit;
     } while ($input = intdiv($input, $base));
     if ($negative) $result .= "-";
     return strrev($result);
