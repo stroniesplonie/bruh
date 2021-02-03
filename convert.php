@@ -3,7 +3,9 @@
 /*
 Kod został opublikowany na licencji JSTMCS (Jeśli Skopiujesz To Mogę Cię Sprzedać).
 Nie biorę odpowiedzialności za jedynki za zadanie.
-Igor Święs
+Vecchia Volpe
+
+ujeb.se/volper
 */
 
 function toString(int $input, int $base) {
