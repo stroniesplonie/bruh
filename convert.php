@@ -9,17 +9,12 @@ Igor Święs
 function toString(int $input, int $base) {
     if ($base < 2) die("Base must be at least 2");
     $negative = $input < 0;
-    $input = abs($input);
     $result = "";
     do {
-        $digit = $input % $base;
-        if ($digit > 9) {
-            $digit = chr($digit + 87);
-        }
-        $result .= $digit;
+        $digit = abs($input) % $base;
+        $result = chr($digit + ($digit > 9 ? 87 : 48)) . $result;
     } while ($input = intdiv($input, $base));
-    if ($negative) $result .= "-";
-    return strrev($result);
+    return ($negative ? "-" : "") . $result;
 }
 
 ?>
