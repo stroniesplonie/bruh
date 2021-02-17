@@ -1,5 +1,11 @@
 <?php
 
+/*
+Kod został opublikowany na licencji JSTMCS (Jeśli Skopiujesz To Mogę Cię Sprzedać).
+Nie biorę odpowiedzialności za jedynki za zadanie.
+Igor Święs
+*/
+
 function oddCount(array $numbers) {
     $count = 0;
     foreach ($numbers as $number) {
