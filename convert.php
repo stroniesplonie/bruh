@@ -1,9 +1,9 @@
 <?php
 
 /*
-Kod został opublikowany na licencji JSTMCS (Jeśli Skopiujesz To Mogę Cię Sprzedać).
+Kod został opublikowany na licencji HWDP.
 Nie biorę odpowiedzialności za jedynki za zadanie.
-Igor Święs
+Filip Ibisz
 */
 
 function toString(int $input, int $base) {
